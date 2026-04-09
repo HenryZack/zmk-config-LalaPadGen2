@@ -59,13 +59,29 @@
         };
     };
 
+    macros {
+        id: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LS(M) &kp NUMBER_1 &kp N5 &kp N7 &kp N0 &kp N4 &kp N6>;
+            label = "NEW_MACRO";
+        };
+
+        p: p {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&none &kp LS(A) &kp V &kp I &kp O &kp N &kp I &kp C &kp W &kp I &kp Z &kp A &kp R &kp D &kp N0 &kp N4 &kp N1 &kp N9>;
+            label = "P";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
         DEFAULT_LAYER {
             display-name = "Default";
             bindings = <
-&kp Q              &kp W      &kp E         &kp R           &kp T                                  &kp Y      &kp U     &kp I           &kp O           &kp P
+&kp Q              &kp W      &kp E         &kp R           &kp T                                  &kp Y      &kp U     &lt 4 I         &kp O           &kp P
 &kp A              &kp S      &kp D         &kp F           &kp G                                  &kp H      &kp J     &kp K           &kp L           &mt2 EQUAL MINUS
 &mt2 LEFT_SHIFT Z  &kp X      &kp C         &kp V           &kp B                                  &kp N      &kp M     &kp COMMA       &kp PERIOD      &kp SLASH
 &kp LCTRL          &kp LWIN   &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 1 SPACE  &kp GRAVE  &kp BACKSPACE  &kp ENTER  &mo 2     &kp LANGUAGE_2  &kp LANGUAGE_1  &kp BACKSLASH
@@ -111,6 +127,18 @@
          &trans   &trans   &trans   &trans   &trans  &trans  &trans                         &trans                         &trans                         &trans
 &trans   &trans   &trans                                                                                                   &trans                         &trans                         &trans
 &trans   &trans   &trans   &trans   &trans                   &trans                         &trans                         &trans                         &trans                         &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &p      &id     &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans                                                  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
