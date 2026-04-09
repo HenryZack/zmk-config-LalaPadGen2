@@ -94,13 +94,13 @@
         SECONDARY_LAYER {
             display-name = "secondary_layer";
             bindings = <
-&kp MINUS         &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9  &kp PLUS                     &kp CARET         &kp AMPERSAND      &kp TILDE        &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
-&kp SLASH         &kp NUMBER_4       &kp NUMBER_5  &kp NUMBER_6  &kp ASTRK                    &kp EXCL          &kp AT             &kp HASH         &kp DOLLAR            &kp PERCENT
-&kp NUMBER_0      &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD                   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE   &kp RIGHT_BRACE       &kp BACKSLASH
-&trans            &trans             &trans        &trans        &trans      &trans  &kp DEL  &trans            &trans             &kp KP_NUMBER_0  &kp KP_DOT            &kp PIPE
-                  &trans             &trans        &trans        &trans      &trans  &trans   &trans            &trans             &trans           &trans
-&trans            &trans             &trans                                                                                        &trans           &trans                &trans
-&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans        &trans        &trans                       &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans           &trans                &trans
+&kp MINUS         &kp NUMBER_7       &kp NUMBER_8  &kp NUMBER_9  &kp PLUS                     &kp CARET         &kp AMPERSAND      &kp TILDE           &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS
+&kp SLASH         &kp NUMBER_4       &kp NUMBER_5  &kp NUMBER_6  &kp ASTRK                    &kp EXCL          &kp AT             &kp HASH            &kp DOLLAR            &kp PERCENT
+&kp NUMBER_0      &kp NUMBER_1       &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD                   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE      &kp RIGHT_BRACE       &kp BACKSLASH
+&trans            &trans             &trans        &trans        &trans      &trans  &kp DEL  &trans            &trans             &kp LS(LANGUAGE_1)  &kp KP_DOT            &kp PIPE
+                  &trans             &trans        &trans        &trans      &trans  &trans   &trans            &trans             &trans              &trans
+&trans            &trans             &trans                                                                                        &trans              &trans                &trans
+&kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans        &trans        &trans                       &kp LC(LG(LEFT))  &kp LC(LG(RIGHT))  &trans              &trans                &trans
             >;
         };
 
