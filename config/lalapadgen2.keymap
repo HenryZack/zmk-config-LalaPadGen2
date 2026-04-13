@@ -55,7 +55,7 @@
 
         COMBO_TAB {
             bindings = <&kp TAB>;
-            key-positions = <10 11>;
+            key-positions = <11 12>;
         };
     };
 
@@ -85,7 +85,7 @@
 &kp A      &kp S      &kp D         &kp F           &kp G                                    &kp H      &kp J     &kp K           &kp L           &mt2 EQUAL MINUS
 &kp Z      &kp X      &kp C         &kp V           &kp B                                    &kp N      &kp M     &kp COMMA       &kp PERIOD      &kp SLASH
 &kp LCTRL  &kp LWIN   &kp LEFT_ALT  &kp LEFT_SHIFT  &lt 1 SPACE  &lt 5 GRAVE  &kp BACKSPACE  &kp ENTER  &mo 2     &kp LANGUAGE_2  &kp LANGUAGE_1  &kp DEL
-           &none      &kp RIGHT     &kp DOWN        &kp LEFT     &kp UP       &kp UP         &kp LEFT   &kp DOWN  &kp RIGHT       &none
+           &mkp MB1   &kp RIGHT     &kp DOWN        &kp LEFT     &kp UP       &kp UP         &kp LEFT   &kp DOWN  &kp RIGHT       &mkp MB1
 &mkp LCLK  &mkp RCLK  &mkp MCLK                                                                                   &mkp LCLK       &mkp RCLK       &mkp MCLK
 &mkp MB4   &mkp MB5   &kp LG(TAB)   &kp LG(D)       &kp LCTRL                                &mkp MB4   &mkp MB5  &kp LG(TAB)     &kp LG(D)       &kp LCTRL
             >;
@@ -144,13 +144,13 @@
 
         layer_5 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans                                                  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &kp UP_ARROW    &trans     &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT  &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans          &trans     &trans                  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans          &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+        &trans          &trans          &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans                                                             &trans  &trans  &trans
+&trans  &trans          &trans          &trans     &trans                  &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
